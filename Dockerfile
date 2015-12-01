@@ -27,7 +27,7 @@ run	chmod 0664 /var/lib/graphite/storage/graphite.db
 run	cd /var/lib/graphite/webapp/graphite && python manage.py syncdb --noinput
 
 # Nginx
-expose	:80
+expose	:8080
 # Carbon line receiver port
 expose	:2003
 
