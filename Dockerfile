@@ -30,10 +30,6 @@ run	cd /var/lib/graphite/webapp/graphite && python manage.py syncdb --noinput
 expose	:80
 # Carbon line receiver port
 expose	:2003
-# Carbon pickle receiver port
-expose	:2004
-# Carbon cache query port
-expose	:7002
 
 cmd	["/usr/bin/supervisord"]
 
